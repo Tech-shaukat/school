@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>School website</title>
+      <!---  <link rel="stylesheet" href="C:\Users\hp\Desktop\project/style.css"> -->
+         <link rel="stylesheet" href="ss.css" type="text/css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <section class="sub-header">
+            <nav>
+                <a href="index.html"><img src="images/rps logo.png"</a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hidemenu()"></i>
+                    <ul>
+                        <li> <a href="index.html">Home</a></li>
+                        <li> <a href="admissionform.html" target="_blank">Addmission</a></li>
+                        <li> <a href="about.html">About Us</a></li>
+                        <li> <a href="course.html">Course</a></li>
+                        <li> <a href="blog.html">Blog</a></li>
+                        <li> <a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showmenu()"></i>
+            </nav>
+            <h1>About Us</h1>
+        </section>
+
+        <!-------- about us contain -->
+        <section class="about-us">
+            <div class="row">
+                <div class="about-col">
+                    <h1>This is the biggest school in the world!</h1>
+                    <p>Village + post :- Barwa ojha, P.s Shanichari District West Champaran,(Bihar) Pin code:- 845452 Near Gov. school barwa ojha<br> Mob:- +91-8405066590, +91-6299392332</p>
+                    <a href="" class="hero-btn red-btn">EXPLORE NOW</a>
+                </div>
+                <div class="about-col">
+                    <img src="images/about.jpg" alt="">
+                </div>
+            </div>
+
+        </section>
+
+
+
+
+      
+        <!---------- footer------------>
+        <section class="footer">
+            <h4>About Us</h4>
+            <p>Village + post :- Barwa ojha, P.s Shanichari, District West Champaran, (Bihar) Pin code:- 845452 <br>If you want to follow me on social media then click on social media icons</p>
+            <div class="icons">
+                 <a href="https://www.facebook.com/" target="_blank">
+                <i class="fa fa-2x fa-facebook"></i>
+              </a>
+              <a href="https://twitter.com/home" target="_blank">
+             	<i class="fa  fa-2x fa-twitter"></i>
+              </a>
+              	<a href="https://www.instagram.com/s_a_raunak/?igshid=ZDdkNTZiNTM%3D" target="_blank">
+             	<i class="fa fa-2x fa-instagram"></i>
+              </a>
+              <a href="https://wa.me/qr/WN62TEB6Y5AJN1" target="_blank">
+              	<i class="fa fa-2x fa-whatsapp"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/shaukat-ansari-3a26a726a/" target="_blank">
+                <i class="fa fa-2x fa-linkedin-square"></i>
+              </a>
+              <a href="https://www.youtube.com/@s_n786" target="_blank">
+                <i class="fa fa-2x fa-youtube-play"></i>
+              </a>
+            </div>
+            <p>Made By <i class="fa fa-heart-o"></i> Shaukat Ansari<br>Mob no :- +91-6299392332, +91-8051710191 <br> Email id:- shaukat786bth@gmail.com</p>
+        </section>
+
+
+       <!------------ javascript for toggle menu ------------>
+        <script>
+            var navLinks = document.getElementById("navLinks");
+            function showmenu(){
+                navLinks.style.right = "0";
+            }
+            function hidemenu(){
+                navLinks.style.right = "-200px";
+            }
+        </script>
+    </body>
+</html>

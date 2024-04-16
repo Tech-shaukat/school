@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>check</title>
+    
+</head>
+<body>
+    <div class="box">
+        <span class="bordeline"></span>
+        <form action="">
+            <div class="pr"></div>
+            <h2>Sing In</h2>
+            <div class="inputBox">
+                <input type="text" id="userid"required="required" maxlength="20">
+                <span>Username</span>
+                <i></i>
+            </div>
+            <div class="inputBox">
+                <input type="password" id="pass" required="required" minlength="6">
+                <span>Password</span>
+                <i></i>
+            </div>
+            <div class="links">
+                <a href="#">Forget Password</a>
+                <a href="signup.html">Sign Up</a>
+            </div>
+            <div id="btn" style="width:100%;">
+            <input type="submit" value="Login" id="btn" onclick="myweb()">
+            <input type="reset" value="Cancel" id="btn">
+             </div>
+        </form>
+    </div>
+    <script>
+        function myweb(){
+            var userid = document.getElementById("userid").value;
+            var pass = document.getElementById("pass").value;
+            if( userid == "Shaukat" && pass == "1234"){
+                window.location.assign("about.html");
+                alert("Login Successfully");
+            }
+            else {
+                alert("Invalid user");
+                return;
+            }
+        }
+    </script>
+</body>
+</html>
